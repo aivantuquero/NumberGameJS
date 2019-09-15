@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Number Guessing Game?</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <style>
+   
+    
+    </style>
+
+</head>
+<body>
+<h1>Number Guessing Game?</h1>
+<p>Created by: Aivan Tuquero</p>
+<div class="container">
+<input type="number" id="userinputA" value="koala">
+<button type="button" id="btn1">Guess</button>
+<p id="textbox"></p>
+</div>
+
+<br>
+<a href="help.html">Creator's Message</a>
+<script>
+
+
+
+var legitanswer = Math.floor(Math.random()*10) ;
+var useranswerA = undefined;
+var useranswerB;
+$("#btn1").click(function(){
+ useranswerA = $("#userinputA").val();;
+ useranswerB = parseInt(useranswerA);
+
+if(useranswerB > legitanswer){
+$("#textbox").append("Your answer is kinda high <br>");
+}
+else if(useranswerB < legitanswer){
+$("#textbox").append("Your answer is kinda low <br>");
+}
+
+else if(useranswerB === legitanswer){
+  $("#textbox").append("Your answer is Correct!<br>");
+  end;
+
+}
+else{
+  $("#textbox").append("invalid answer<br>");
+}
+
+
+});
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
